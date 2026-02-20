@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The odin Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="/" class="nav-logo">
+                    <img src="./assets/images/logo.png" alt="The Odin Project Logo">
+                    <span>THE ODIN PROJECT</span>
+                </a>
+
+                <div class="nav-right">
+                    <div class="nav-links desktop-only">
+                        <a href="/paths" class="nav-link">All Paths</a>
+                        <a href="/about" class="nav-link">About</a>
+                        <a href="/community" class="nav-link">Community</a>
+                        <a href="/support" class="nav-link">Support us</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <a href="/signin" class="nav-link desktop-only">Sign in</a>
+                        <button class="theme-toggle desktop-only" id="theme-toggle">
+                            <i data-lucide="moon"></i>
+                        </button>
+                        <a href="/get-started" class="btn btn-primary desktop-only">Get Started</a>
+                        <button class="mobile-toggle" id="mobile-toggle">
+                            <i data-lucide="menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-sidebar" id="mobile-sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="nav-logo">
+                    <img src="./assets/images/logo.png" alt="The Odin Project Logo">
+                    <span>THE ODIN PROJECT</span>
+                </a>
+                <button class="close-sidebar" id="close-sidebar">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="sidebar-links">
+                <a href="/" class="sidebar-link active">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="/paths" class="sidebar-link">
+                    <i data-lucide="map"></i>
+                    <span>All Paths</span>
+                </a>
+                <a href="/about" class="sidebar-link">
+                    <i data-lucide="info"></i>
+                    <span>About</span>
+                </a>
+                <a href="/support" class="sidebar-link">
+                    <i data-lucide="heart"></i>
+                    <span>Support Us</span>
+                </a>
+                <a href="/community" class="sidebar-link">
+                    <i data-lucide="message-square"></i>
+                    <span>Community</span>
+                </a>
+                <hr>
+                <a href="/get-started" class="sidebar-link">
+                    <i data-lucide="rocket"></i>
+                    <span>Get started</span>
+                </a>
+                <button class="sidebar-link theme-toggle-mobile">
+                    <i data-lucide="moon"></i>
+                    <span>Light mode</span>
+                </button>
+                <a href="/signin" class="sidebar-link">
+                    <i data-lucide="log-in"></i>
+                    <span>Sign in</span>
+                </a>
+            </div>
+        </div>
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    </header>
+
+    <script src="./js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
