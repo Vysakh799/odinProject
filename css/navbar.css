@@ -46,3 +46,24 @@ li{
  
 }
 
+#menu-toggle{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 26px;
+    color: gray;
+}
+
+@media screen and (max-width:820px) {
+    .logo-content{
+        display: none;
+    }
+    ul{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width:412px) {
+    
+}
